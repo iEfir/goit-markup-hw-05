@@ -28,14 +28,20 @@
             <span class="web">Web</span>Studio
           </a>
           <ul class="index-header-list">
-            <li>
-              <a class="navigation-link" href="index.html">Студія</a>
+            <li class="index-header-item">
+              <a class="navigation-link" href="index.html">Студія
+                <div class="header-line-nav"></div>
+              </a>
             </li>
-            <li>
-              <a class="navigation-link" href="portfolio.html">Портфоліо</a>
+            <li class="index-header-item">
+              <a class="navigation-link" href="portfolio.html">Портфоліо
+                <div class="header-line-nav"></div>
+              </a>
             </li>
-            <li>
-              <a class="navigation-link" href="">Контакти</a>
+            <li class="index-header-item">
+              <a class="navigation-link" href="">Контакти
+                <div class="header-line-nav"></div>
+              </a>
             </li>
           </ul>
         </nav>
@@ -62,7 +68,7 @@
       <section class="index-hero">
         <div class="container container-hero">
           <h1 class="index-tagline">Ефективні рішення для вашого бізнесу</h1>
-          <button class="index-btn" type="button">Замовити послугу</button>
+          <button class="index-btn" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -128,9 +134,12 @@
               <img
                 class="img"
                 src="./img/img.jpg"
-                alt="Работа с графикой"
+                alt="Десктопні додатки"
                 width="370"
               />
+              <div class="activity-backdrop">
+                <p class="activity-item-discription">Десктопні додатки</p>
+              </div>
             </li>
             <li class="activity-item">
               <img
@@ -139,6 +148,9 @@
                 alt="Работа с графикой"
                 width="370"
               />
+              <div class="activity-backdrop">
+                <p class="activity-item-discription">Мобільні додатки</p>
+              </div>
             </li>
             <li class="activity-item">
               <img
@@ -147,6 +159,9 @@
                 alt="Работа с графикой"
                 width="370"
               />
+              <div class="activity-backdrop">
+                <p class="activity-item-discription">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -440,5 +455,21 @@
         </div>
       </div>
     </footer>
+    
+
+    <div class="backdrop-index-hero is-hidden" data-modal>
+      <div class="modal-index-hero">
+        <button class="modal-close-btn" data-modal-close type="button">
+          <svg class="icon-close-modal" width="18" height="18">
+            <use href="./img/symbol-defs.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+
+
   </body>
 </html>
