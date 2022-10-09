@@ -140,9 +140,12 @@ address {
   position: absolute;
   bottom: -1px;
   left: 0;
+
+  pointer-events: none;
 }
 
 .current {
+  padding: 0px 1.5px;
   color: var(--logo-focus-hover-color);
 }
 
